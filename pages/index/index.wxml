@@ -1,0 +1,11 @@
+<!--index.wxml-->
+
+<view class="lst">
+  <view wx:for="{{list}}" wx:key="contentId" class="lst-item">
+    <image class="lst-img" mode="aspectFill" src="{{item.cover}}"></image>
+    <view class="lst-dec">
+      <text>{{item.title}}</text>
+      <text>{{item.releaseDate}}</text>
+    </view>
+  </view>
+</view>
