@@ -1,0 +1,19 @@
+/* article.wxss */
+
+.article {
+  padding: 25rpx;
+}
+
+.title {
+  font-size: 38rpx;
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 24rpx;
+  padding: 20rpx 0;
+}

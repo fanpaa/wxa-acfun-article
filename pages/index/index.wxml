@@ -3,9 +3,17 @@
 <view class="lst">
   <view wx:for="{{list}}" wx:key="contentId" class="lst-item">
     <image class="lst-img" mode="aspectFill" src="{{item.cover}}"></image>
-    <view class="lst-dec">
-      <text>{{item.title}}</text>
-      <text>{{item.releaseDate}}</text>
-    </view>
+    <navigator url="/pages/article/article?contentId={{item.contentId}}">
+      <view class="lst-dec">
+        <text class="lst-title">{{item.title}}</text>
+        <view class="lst-data">
+          <text class="lst-info">{{item.comments}}评论 / {{item.views}}点击</text>
+          <text class="lst-date">{{item.releaseDate}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="weui-loading-wrap">
+    <view class="weui-loading"></view>
   </view>
 </view>

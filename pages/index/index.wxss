@@ -18,6 +18,7 @@
 .lst-dec {
   display: flex;
   width: 550rpx;
+  height:100%;
   padding-left: 20rpx;
   flex-direction: column;
   justify-content: space-between
@@ -27,4 +28,22 @@
   display: flex;
   flex-direction: row;
   padding: 0 25rpx 25rpx 25rpx;
+}
+
+.lst-title{
+  line-height: 40rpx;
+}
+
+.lst-date{
+  font-size: 24rpx;
+}
+
+.lst-info{
+  font-size: 24rpx;
+}
+
+.lst-data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
